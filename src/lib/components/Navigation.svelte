@@ -1,4 +1,4 @@
-<nav class="list-nav">
+<nav class="list-nav p-4">
 	<ul>
 		<li><a href="/">Main</a></li>
 		<li><a href="/1">Page 1</a></li>
