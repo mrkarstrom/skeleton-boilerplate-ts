@@ -14,11 +14,11 @@
 	}
 </script>
 
-<Drawer>
+<Drawer position="right">
 	<Navigation />
 </Drawer>
 
-<AppShell slotSidebarLeft="w-0 md:w-52 bg-surface-500/10">
+<AppShell slotSidebarRight="w-0 md:w-36 bg-surface-500/10">
 	<svelte:fragment slot="header"
 		><AppBar regionRowHeadline="mx-auto">
 			<svelte:fragment slot="lead">
@@ -30,13 +30,13 @@
 					cursor="cursor-pointer"
 					src="img/logo/large/ES-logo-bg-transparent.png"
 					rounded="rounded-full"
-					background="bg-inherit"
+					background="bg-surface-900/50"
 				/>
-				<span>
-					<h4 class="h4 font-bold">Educate</h4>
-					<h4 class="h4">Smart</h4>
-				</span>
 			</svelte:fragment>
+			<span class="flex">
+				<h4 class="h4">Educate</h4>
+				<h4 class="h4">Smart</h4>
+			</span>
 			<svelte:fragment slot="trail">
 				<button class="btn btn-sm mr-4 md:hidden" on:click={drawerOpen}>
 					<svg
@@ -56,7 +56,7 @@
 			<svelte:fragment slot="headline">(headline)</svelte:fragment>
 		</AppBar></svelte:fragment
 	>
-	<svelte:fragment slot="sidebarLeft">
+	<svelte:fragment slot="sidebarRight">
 		<Navigation />
 	</svelte:fragment>
 	<!-- <svelte:fragment slot="sidebarRight">Sidebar Right</svelte:fragment> -->

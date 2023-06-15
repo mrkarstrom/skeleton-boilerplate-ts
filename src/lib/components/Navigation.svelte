@@ -6,7 +6,7 @@
 	}
 </script>
 
-<nav class="list-nav p-4">
+<nav class="list-nav list-dr p-4">
 	<ul>
 		<li><a href="/" on:click={closeDrawer}>Main</a></li>
 		<li><a href="/1" on:click={closeDrawer}>Page 1</a></li>
