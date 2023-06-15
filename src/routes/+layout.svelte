@@ -22,6 +22,22 @@
 	<svelte:fragment slot="header"
 		><AppBar regionRowHeadline="mx-auto">
 			<svelte:fragment slot="lead">
+				<!-- Find all the Avatar-props here: https://www.skeleton.dev/components/avatars -->
+				<Avatar
+					width="w-10"
+					initials="ES"
+					border="border-4 border-surface-300-600-token hover:!border-primary-500"
+					cursor="cursor-pointer"
+					src="img/logo/large/ES-logo-bg-transparent.png"
+					rounded="rounded-full"
+					background="bg-inherit"
+				/>
+				<span>
+					<h4 class="h4 font-bold">Educate</h4>
+					<h4 class="h4">Smart</h4>
+				</span>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
 				<button class="btn btn-sm mr-4 md:hidden" on:click={drawerOpen}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -36,15 +52,6 @@
 						/></svg
 					>
 				</button>
-			</svelte:fragment>
-			<svelte:fragment slot="trail">
-				<!-- Find all the Avatar-props here: https://www.skeleton.dev/components/avatars -->
-				<Avatar
-					width="w-10"
-					initials="MK"
-					border="border-4 border-surface-300-600-token hover:!border-primary-500"
-					cursor="cursor-pointer"
-				/>
 			</svelte:fragment>
 			<svelte:fragment slot="headline">(headline)</svelte:fragment>
 		</AppBar></svelte:fragment
